@@ -11,7 +11,7 @@ provider "docker" {}
 
 resource "docker_image" "nginx" {
   name         = "nginx:1.19.6"
-  keep_locally = true       // keep image after "destroy"
+  keep_locally = true    // keep image after "destroy"
 }
 
 resource "docker_container" "nginx" {
@@ -19,6 +19,6 @@ resource "docker_container" "nginx" {
   name  = "tutorial"
   ports {
     internal = 80
-    external = 8000
+    external = 2224
   }
 }
