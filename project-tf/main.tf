@@ -13,5 +13,6 @@ terraform {
 # the "module" block is reaching for a prebuilt solution
 module "my_container" {
   source = "./my_modules/container_maker"                 # path to our child module "container_maker"
-  container_name = var.container_name_from_root           # this value provided in the root will override the value for var.container_name within the child module
+  container_name = var.container_name_from_root # this value provided in the root will override the value for var.container_name within the child module
+  external_port = var.external_port
 }
