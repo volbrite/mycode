@@ -11,5 +11,5 @@ variable "container_name_from_root" {
 variable "external_port" {
   description = "external_port"
   type = number
-  default = 2225   # override this if you want to change the name used by the child module
+  default = 2224   # override this if you want to change the name used by the child module
 }
