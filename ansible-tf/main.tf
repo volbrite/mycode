@@ -26,7 +26,7 @@ resource "docker_image" "fry" {
   name         = "ssh-fry:latest"
   keep_locally = true
   build {
-    path = "/home/student/mycode/ansible-tf/"    # path to Dockerfile
+    path = "/home/student/00_GIT/mycode/ansible-tf/"    # path to Dockerfile
     tag = ["ssh-fry"]
     build_arg = {
       user : "fry"
