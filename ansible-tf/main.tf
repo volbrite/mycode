@@ -42,6 +42,6 @@ resource "docker_container" "fry" {
   networks_advanced {
     name = docker_network.ansible-net.name
     aliases = ["ansible-net"]
-    ipv4_address = "10.10.2.4"
+    ipv4_address = "10.10.2.144"
   }
 }
